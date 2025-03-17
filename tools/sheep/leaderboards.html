@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="my hub for everything programming!"/>
+        <title>bytespace - sheep leaderboards</title>
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css.css">
+      <script type="text/javascript" src="leaderboards.js"></script>
+	    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("https://bytespacegames.com/navbar")
+                    .then(response => response.text())
+                    .then(html => {
+        	    document.getElementById("navbar").innerHTML = html;
+                });
+            });
+
+            function checkEnter(event) {
+      if (event.key === "Enter") {
+        const username = document.getElementById("username").value;
+        window.location.href = "stats.html?username=" + username;
+      }
+    }
+        </script>
+        <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+		<script defer src="/_vercel/insights/script.js"></script>
+    </head>
+    <body>
+	    <div id="navbar"></div>
+      <div id="page">
+        <div id="sheepcontainer">
+          <text class="title" id="titlebar">leaderboards - loading</text>
+          <div class="break"></div>
+          <div id="statscont"></div>
+        </div>
+      </div>
+    </body>
+</html>
