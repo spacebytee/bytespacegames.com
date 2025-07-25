@@ -24,7 +24,7 @@ function parseData(data) {
     maxPages = data.pagecount;
     addTabs();
     for (const item of data.data) {
-        addRanking(item.name,item.amount,item.position,item.rank,"stats.html?username=" + item.name, item.rankColor, item.plusColor);
+        addRanking(item.name,item.amount,item.position,item.rank,"stats.html?username=" + item.uuid, item.rankColor, item.plusColor);
     }
     addButtons();
 }
