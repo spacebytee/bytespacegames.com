@@ -3,7 +3,7 @@ let page = url.searchParams.get("page");
 let type = url.searchParams.get("type");
 let maxPages = 2;
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://api.bytespacegames.com:5000/api/GetLeaderboard?type=" + type + "&page=" + page)
+    fetch("https://api.bytespacegames.com:443/api/GetLeaderboard?type=" + type + "&page=" + page)
     .then(async (response) => {
         if (response.ok) {
           return response.json();

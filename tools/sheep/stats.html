@@ -10,7 +10,7 @@
       <script type="text/javascript" src="stats.js"></script>
 	    <script>
             document.addEventListener("DOMContentLoaded", function () {
-                fetch("https://bytespacegames.com/navbar")
+                fetch("/navbar")
                     .then(response => response.text())
                     .then(html => {
         	    document.getElementById("navbar").innerHTML = html;
