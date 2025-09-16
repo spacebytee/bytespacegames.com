@@ -21,6 +21,8 @@ function toPage(rank) {
 }
 function parseData(data) {
     document.getElementById("titlebar").innerHTML = "stats - " + data.name;
+    document.title = data.name + "'s Sheep Stats";
+    setDescription("Hypixel Sheep Stats for player " + data.name);
     addRanking("Total", data.total, data.rankTotal, "leaderboards.html?type=total&page=" + toPage(data.rankTotal));
     addRanking("Grass", data.grass, data.rankGrass, "leaderboards.html?type=grass&page=" + toPage(data.rankGrass));
     addRanking("Logs", data.logs, data.rankLogs,"leaderboards.html?type=logs&page=" + toPage(data.rankLogs));
@@ -47,3 +49,10 @@ function addRanking(title, score, rank, redir) {
     container.appendChild(line);
 }
 
+function setDescription(desc) {
+    let meta = document.querySelector('meta[name="description"]');
+
+    if (meta) {
+        meta.setAttribute("content", desc);
+    }
+}
