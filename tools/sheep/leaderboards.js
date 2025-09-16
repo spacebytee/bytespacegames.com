@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function parseData(data) {
     document.getElementById("titlebar").innerHTML = "leaderboards - " + type.toLowerCase().trim() + " eaten, page " + page;
-    document.title = type.trim() + "Eaten Leaderboard - Page "+ page;
-    setDescription("Hypixel Sheep Stats, " + type.trim() + "Eaten Leaderboard - Page "+ page);
+    document.title = type.trim().charAt(0).toUpperCase() + type.trim().slice(1) + " Eaten Leaderboard - Page "+ page;
+    setDescription("Hypixel Sheep Stats, " + type.trim().charAt(0).toUpperCase() + type.trim().slice(1) + " Eaten Leaderboard - Page "+ page);
     maxPages = data.pagecount;
     addTabs();
     for (const item of data.data) {
@@ -204,6 +204,7 @@ function getMinecraftColor(color) {
     };
     return colors[color] || "#FFFFFF"; // Default to white
 }
+
 
 function setDescription(desc) {
     let meta = document.querySelector('meta[name="description"]');
