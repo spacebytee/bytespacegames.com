@@ -1,3 +1,5 @@
+User-agent: *
 Disallow: /clicktotenmodmanager
 Allow: /cttmm
 Allow: /click-to-ten-mod-manager
+Disallow: /authorize_account.html
