@@ -68,28 +68,18 @@ body {
 }
 
 #box {
-	background-color:#181818;
 	position:fixed;
+	top:30px;
 	color:white;
 	text-align:center;
-	width:65%;
-	height: 75%;
-	left: 50%;
-	top: 54%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	width:100%;
+	height: calc(100% - 30px);
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 #content {
-	position:fixed;
-	
-	color:white;
-	text-align:center;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	width: 90%;
-    align-items: center;
+	width:90%;
 }
 
 #page {
@@ -149,11 +139,15 @@ body {
 	animation-name: pulse;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
+	margin-bottom:30px;
+	margin-top:0px;
 }
 
 .info {
 	font-size:200%;
 	color:white;
+	margin:0;
+	display: inline;
 }
 
 .link:hover {

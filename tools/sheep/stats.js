@@ -1,7 +1,10 @@
+import { endpoints } from '/api_endpoints.js';
+
 let url = new URL(window.location.href);
 let identifier = url.searchParams.get("username");
+
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://api.bytespacegames.com:443/api/GetStats?identifier=" + identifier)
+    fetch(endpoints.SHEEPSTATS + "?identifier=" + identifier)
     .then(async (response) => {
         if (response.ok) {
           return response.json();
