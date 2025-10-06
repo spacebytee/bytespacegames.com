@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(endpoints.FINALIZE, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: token
+        body: JSON.stringify(token)
     })
     .then(async (response) => {
         if (response.ok) {
