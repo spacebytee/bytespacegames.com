@@ -10,6 +10,7 @@ if (!token) {
 document.addEventListener("DOMContentLoaded", function () {
     fetch(endpoints.FINALIZE, {
         method: "POST",
+        headers: {"Content-Type": "application/json"},
         body: token
     })
     .then(async (response) => {
