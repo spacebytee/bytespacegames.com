@@ -7,13 +7,12 @@ let errorLabel;
 let registerBtn;
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("hi");
     passwordInput = document.getElementById("password");
     usernameInput = document.getElementById("username");
     emailInput = document.getElementById("email");
     errorLabel = document.getElementById("error");
     registerBtn = document.getElementById("register");
-    
+
     const requirements = document.getElementById("password-requirements");
 
     const positionBox = () => {
@@ -113,8 +112,7 @@ function register() {
         password: passwordInput.value,
         email: emailInput.value
     };
-    document.addEventListener("DOMContentLoaded", function () {
-        fetch(endpoints.REGISTER, {
+    fetch(endpoints.REGISTER, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(payload)
@@ -141,7 +139,6 @@ function register() {
         }
     })
     .catch((error) => {
-            errorLabel.innerHTML = error.message
-    });
+        errorLabel.innerHTML = error.message
     });
 }
