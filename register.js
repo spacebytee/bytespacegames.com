@@ -1,4 +1,5 @@
-//import { endpoints } from '/api_endpoints.js';
+import { endpoints } from '/api_endpoints.js';
+
 let rAll = false;
 let passwordInput;
 let usernameInput;
