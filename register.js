@@ -132,7 +132,7 @@ function register() {
             content.appendChild(brDiv);
             const info = document.createElement("p");
             info.className = "info";
-            info.textContent = "info";
+            info.textContent = await response.text();
             content.appendChild(info);
         } else {
             let em = await response.text();
