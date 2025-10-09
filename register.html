@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>bytespace - register</title>
+      <meta name="description" content="Hypixel Sheep Stats and Leaderboards"/>
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="css.css">
+      <link rel="stylesheet" href="register.css">
+      <script type="module" src="./register.js"></script>
+	    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("/navbar")
+                    .then(response => response.text())
+                    .then(html => {
+        	    document.getElementById("navbar").innerHTML = html;
+                });
+            });
+        </script>
+        <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+		  <script defer src="/_vercel/insights/script.js"></script>
+    </head>
+    <body>
+	    <div id="navbar"></div>
+      <div id="page">
+        <div id="content">
+          <p class="title">register</p> <div class="break"></div>
+          <input type="text" style="width:350px;" id="username" class="bytefield" placeholder="username" maxlength="16"><div class="break"></div>
+          <input type="text" style="width:350px;" id="email" class="bytefield" placeholder="email"><div class="break"></div>
+          <input type="password" style="width:350px;" id="password" class="bytefield" placeholder="password"><div class="break"></div>
+          <div id="password-requirements">
+            <div class="password-req"><span class="bullet" id="r1">•</span><span>at least 8 characters</span></div>
+            <div class="password-req"><span class="bullet" id="r2">•</span><span>1 uppercase letter</span></div>
+            <div class="password-req"><span class="bullet" id="r3">•</span><span>1 lowercase letter</span></div>
+            <div class="password-req"><span class="bullet" id="r4">•</span><span>1 number</span></div>
+            <div class="password-req"><span class="bullet" id="r5">•</span><span>1 special character</span></div>
+          </div>
+          <p style="color:#ff0055; margin-bottom:10px;" class="info small" id="error"></p><div class="break"></div>
+          <a class="bytebtn" onclick="register()">register</a>
+        </div>
+      </div>
+    </body>
+</html>

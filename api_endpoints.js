@@ -23,6 +23,7 @@ export const endpoints = {
 
     PROFILE,
     PROFILECONTENT: PROFILE + "content",
+    PROFILEWHOAMI: PROFILE+"whoami",
 
     SESSION,
     SESSIONCREATE: SESSION + "create",

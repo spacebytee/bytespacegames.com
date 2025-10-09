@@ -63,6 +63,7 @@ body {
 .bytebtn:hover {
 	color:#00CCFF;
 	background-color:#121212;
+	cursor:pointer;
 }
 
 #sheepcontainer {

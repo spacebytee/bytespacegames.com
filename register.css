@@ -1,0 +1,18 @@
+#password-requirements {
+    position: fixed; 
+    top: 0;
+    left:0;
+    text-align:left;
+}
+.password-req {
+    display:flex;
+    align-items: center;
+    justify-content:left;
+    margin-bottom:4px;
+}
+.bullet {
+    color:#ff0055; 
+    font-size:30px; 
+    margin-right:6px;
+    line-height:0;
+}
