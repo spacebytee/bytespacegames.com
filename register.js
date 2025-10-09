@@ -4,6 +4,7 @@ let passwordInput;
 let usernameInput;
 let emailInput;
 let errorLabel;
+let registerBtn;
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("hi");
@@ -11,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     usernameInput = document.getElementById("username");
     emailInput = document.getElementById("email");
     errorLabel = document.getElementById("error");
+    registerBtn = document.getElementById("register");
+    
     const requirements = document.getElementById("password-requirements");
 
     const positionBox = () => {
@@ -26,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     passwordInput.addEventListener("input", checkPasswordRequirements);
     emailInput.addEventListener("input", clearError);
     usernameInput.addEventListener("input", clearError);
+
+    if (registerBtn) {
+        registerBtn.addEventListener('click', register);
+    }
 });
 function clearError() {
     errorLabel.innerHTML = "";
