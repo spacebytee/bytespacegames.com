@@ -111,7 +111,7 @@ function register() {
     const payload = {
         username: usernameInput.value.trim(),
         password: passwordInput.value,
-        email: emailInput.value
+        email: emailInput.value.trim()
     };
     fetch(endpoints.REGISTER, {
         method: "POST",
