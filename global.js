@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setupNavbarRight();
     createDropdown();
 
-    fetch("navbar.html")
+    fetch("/navbar.html")
     .then(response => response.text())
     .then(html => {
         navbarLeft.innerHTML = html;
