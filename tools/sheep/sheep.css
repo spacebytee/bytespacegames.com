@@ -1,0 +1,47 @@
+
+
+#sheepcontainer {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-wrap: wrap;
+	text-align:center;
+}
+
+#statscont {
+	background: #181818;
+	padding: 20px;
+	text-align: left;
+	display: block;
+	margin-top:20px;
+}
+
+.ranking-line {
+	display: flex;
+	color:white;
+	text-align:left;
+	justify-content: space-between;
+	width: 100%;
+	margin-right:20px;
+	white-space: nowrap;
+	font-size:20px;
+}
+
+.ranking-line .placement {
+	text-decoration: none;
+	color: gray;
+	text-align: right;
+	flex-shrink: 0;
+}
+.ranking-line .player {
+	text-decoration: none;
+	color: white;
+	text-align: right;
+	flex-shrink: 0;
+}
+.ranking-line .value {
+	text-decoration: none;
+	color: white;
+	text-align: right;
+	flex-shrink: 0;
+}
