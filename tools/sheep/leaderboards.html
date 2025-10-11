@@ -8,15 +8,8 @@
 	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css.css">
       <script type="module" src="leaderboards.js"></script>
+      <script type="module" src="global.js"></script>
 	    <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                fetch("/navbar")
-                    .then(response => response.text())
-                    .then(html => {
-        	    document.getElementById("navbar").innerHTML = html;
-                });
-            });
-
             function checkEnter(event) {
       if (event.key === "Enter") {
         const username = document.getElementById("username").value;
