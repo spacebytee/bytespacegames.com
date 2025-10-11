@@ -14,6 +14,15 @@
 	z-index:100;
 } 
 
+#navbar-left {
+	left:0;
+	text-align:left;
+}
+#navbar-right {
+	right:0;
+	text-align:right;
+}
+
 body {
 	background-color: #242424;
 }
@@ -191,6 +200,7 @@ body {
 
 .link:hover {
 	font-size:32px;
+	cursor:pointer;
 	color:#00CCFF;
 }
 .break {
