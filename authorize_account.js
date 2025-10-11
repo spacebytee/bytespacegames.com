@@ -27,7 +27,7 @@ if (token === "complete") {
             document.getElementById("authstatus").innerHTML = "congratulations! your account has successfully been created!";
             setTimeout(() => {
                 window.location = "/authorize_account?token=complete";
-            }, 200);
+            }, 5000);
         } else {
             let em = await response.text();
             throw new Error(em);
