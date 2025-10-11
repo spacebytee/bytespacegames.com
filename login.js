@@ -46,7 +46,7 @@ async function login() {
         return;
     }
     const payload = {
-        password: await hash(passwordInput.value),
+        hashedPassword: await hash(passwordInput.value),
         email: emailInput.value.trim()
     };
     fetch(endpoints.LOGIN, {
