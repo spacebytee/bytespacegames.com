@@ -7,16 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css.css">
-
-	    <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                fetch("navbar.html")
-                    .then(response => response.text())
-                    .then(html => {
-        	    document.getElementById("navbar").innerHTML = html;
-                });
-            });
-        </script>
+	    <script type="module" src="global.js"></script>
         <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 		<script defer src="/_vercel/insights/script.js"></script>
     </head>
