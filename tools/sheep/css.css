@@ -13,6 +13,17 @@
     align-items: center;
 	z-index:100;
 } 
+#navbar-left {
+	left:0;
+	text-align:left;
+	width:100%;
+}
+#navbar-right {
+	right:0;
+	text-align:right;
+	width:100%;
+	padding:16px;
+}
 
 body {
 	background-color: #242424;
