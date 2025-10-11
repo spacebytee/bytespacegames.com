@@ -1,5 +1,5 @@
 import { endpoints } from '/api_endpoints.js';
-
+console.log("before navbar runs, userData:", localStorage.getItem("userData"));
 let navbarDiv;
 let navbarLeft;
 let navbarRight;
@@ -118,7 +118,8 @@ async function validateToken() {
         let now = Date.now();
     
         if (!res.ok) {
-            localStorage.removeItem("userData");
+            //localStorage.removeItem("userData");
+            console.warn("token validation failed");
             return false;
         }
 

@@ -22,6 +22,7 @@ if (token === "complete") {
                 throw new Error("Invalid response");
             }
             let userData = {username: result.username, uuid: result.uuid, token: result.token, lastValidated: Date.now()};
+            console.log("setting userdata: " + JSON.stringify(userData));
             localStorage.setItem("userData", JSON.stringify(userData));
             document.getElementById("authstatus").innerHTML = "congratulations! your account has successfully been created!";
             setTimeout(() => {
