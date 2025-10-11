@@ -1,5 +1,4 @@
 import { endpoints } from '/api_endpoints.js';
-console.log("before navbar runs, userData:", localStorage.getItem("userData"));
 let navbarDiv;
 let navbarLeft;
 let navbarRight;
@@ -87,8 +86,8 @@ function createDropdown() {
 }
 function showDropdown() {
     dropdownVisible = true;
-    profileBtn.style.display = "block";
-    logoutBtn.style.display = "block";
+    profileBtn.style.display = "flex";
+    logoutBtn.style.display = "flex";
 
     profileBtn.style.right = "0px";
     profileBtn.style.top = `${navbarDiv.getBoundingClientRect().bottom}px`;
