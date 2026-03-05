@@ -28,6 +28,7 @@
 
 body {
 	background-color: #242424;
+	color:white;
 }
 .bytefield {
 	display: flex;
@@ -186,7 +187,6 @@ body {
 
 .info {
 	font-size:32px;
-	color:white;
 	margin:0;
 	display: inline;
 }
