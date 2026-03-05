@@ -209,6 +209,14 @@ body {
 	flex-basis: 100%;
 	height: 0;
 }
+#bluehover {
+	transition-duration: 0.4s;
+	color:white;
+}
+#bluehover:hover {
+	transition-duration: 0.4s;
+	color:#00CCFF;
+}
 
 @keyframes pulse {
   0% {
